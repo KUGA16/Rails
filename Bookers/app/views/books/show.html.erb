@@ -1,5 +1,14 @@
+<!-- book詳細画面 -->
 
-<p><storong>Title:</storong></p>
+<p class="notice">
+	<%= flash[:notice] %>
+</p>
 
 
-<p><storong>Body:</storong></p>
+<p>Title:<%= @book.title %></p>
+
+
+<p>Body:<%= @book.body %></p>
+
+
+<div><%= link_to "Edit", edit_book_path %>|<%= link_to "Back", books_path %></div>
